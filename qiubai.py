@@ -5,7 +5,6 @@ from bs4 import BeautifulSoup
 
 class QiubaiSpider(SpiderHTML):
 	def __init__(self,contentType,pageStart=1, pageEnd=1):
-		#super.__init__(self)
 		self._contentType = contentType
 		self._pageStart = int(pageStart)
 		self._pageEnd = int(pageEnd)+1
@@ -48,7 +47,6 @@ if __name__ == '__main__':
 	contentType = 'new'
 	page = 0
 	paramsNum = len(sys.argv)
-
 	#输入想获取最新的糗百还是最热的糗百
 	#参数2,3为想要获取的页数
 	if paramsNum>=4:
